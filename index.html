@@ -1,0 +1,948 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ADP Payroll</title>
+    <style>
+      /* -------------------------------------
+              FONTS
+      ------------------------------------- */
+      @font-face {
+        font-family: 'proxima_nova';
+        src: url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Light-webfont.eot');
+        src: url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Light-webfont.woff') format('woff'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Light-webfont.ttf') format('truetype'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Light-webfont.svg#proxima_nova_ltlight') format('svg');
+        font-weight: 200;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'proxima_nova';
+        src: url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Reg-webfont.eot');
+        src: url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Reg-webfont.woff') format('woff'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Reg-webfont.ttf') format('truetype'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular') format('svg');
+        font-weight: 400;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'proxima_nova';
+        src: url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Bold-webfont.eot');
+        src: url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Bold-webfont.woff') format('woff'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Bold-webfont.ttf') format('truetype'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Bold-webfont.svg#proxima_nova_rgbold') format('svg');
+        font-weight: 600;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'rokkitt';
+        src: url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-regular-webfont-eot.ashx');
+        src: url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-regular-webfont-eot.ashx?#iefix') format('embedded-opentype'), url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-regular-webfont-woff.ashx') format('woff'), url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-regular-webfont-ttf.ashx') format('truetype'), url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-regular-webfont.svg#rokkittregular') format('svg');
+        font-weight: 400;
+        font-style: regular;
+      }
+      @font-face {
+        font-family: 'rokkitt';
+        src: url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-bold-webfont-eot.ashx');
+        src: url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-bold-webfont-eot.ashx?#iefix') format('embedded-opentype'), url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-bold-webfont-woff.ashx') format('woff'), url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-bold-webfont-ttf.ashx') format('truetype'), url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-bold-webfont.svg#rokkittbold') format('svg');
+        font-weight: 600;
+        font-style: bold;
+      }
+      /* -------------------------------------
+          GLOBAL RESETS
+      ------------------------------------- */
+      img {
+        border: none;
+        -ms-interpolation-mode: bicubic;
+        max-width: 100%;
+      }
+
+      body {
+        width: 100%;
+        background-color: #f6f6f6;
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-size: 12px;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      table td {
+        font-family: sans-serif;
+        font-size: 14px;
+        vertical-align: top;
+      }
+      .ReadMsgBody {
+        width: 100%;
+        background-color: #ebebeb;
+      }
+      .ExternalClass {
+        width: 100%;
+        background-color: #ebebeb;
+      }
+      .ExternalClass * {
+        line-height: 100%;
+      }
+
+      table {
+        border-collapse: collapse;
+        mso-table-lspace:0pt;
+        mso-table-rspace:0pt;
+        table-layout: fixed;
+      }
+      table table {
+        table-layout: auto;
+        width: 100%;
+      }
+
+      /* -------------------------------------
+          BODY & CONTAINER
+      ------------------------------------- */
+
+      .mainTable {
+        background-color: #ffffff;
+        width: 100%;
+        margin:0 !important;
+        padding:0 !important;
+        min-width:100% !important;
+      }
+
+      /* Set a max-width, and make it display as block so it will automatically stretch to that width, but will also shrink down on a phone or something */
+      .container {
+        display: block;
+        margin: 0 auto !important;
+        width: 100%;
+      }
+
+      /* -------------------------------------
+          HEADER, FOOTER, MAIN
+      ------------------------------------- */
+      .main {
+        background: #fff;
+        width: 630px;
+        max-width: 630px;
+      }
+
+      .wrapper {
+        padding-top: 36px;
+        box-sizing: border-box;
+        width: 630px;
+      }
+      .desktop-visible{
+        display: block;;
+      }
+      .mobile-visible{
+        display: none;
+      }
+      /* -------------------------------------
+          TYPOGRAPHY
+      ------------------------------------- */
+      h1,
+      h2,
+      h3,
+      h4 {
+        color: #000000;
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+      }
+
+      h1 {
+        font-size: 39px;
+        font-weight: 300;
+        text-align: center;
+        text-transform: capitalize;
+      }
+      h2 { font-size: 28px; }
+      h3 { font-size: 20px; }
+      p {
+        font-size: 16px;
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        color: #222222;
+      }
+
+      ul,
+      ol {
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        margin: 0;
+      }
+      p li,
+      ul li,
+      ol li {
+        list-style-position: inside;
+        margin-left: 5px;
+      }
+
+      a {
+        color: #3498db;
+        text-decoration: underline;
+      }
+      /* -------------------------------------
+          COMMON
+      ------------------------------------- */
+      .trouble-view{
+        margin-top: 40px;
+        text-align: center;
+      }
+      .trouble-view p{
+        display: inline-table;
+        color: #757575;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        text-align: center;
+      }
+      .trouble-view a{
+        color: #0f5199;
+        text-decoration: none;
+      }
+      .logo{
+        clear: both;
+        padding-top: 20px;
+        padding-bottom: 54px;
+      }
+      .logo div{
+        display: inline-block;
+      }
+      .logo div img{
+        height: 26px;
+        width: auto;
+      }
+      .subtitle{
+        float: right;
+      }
+      .subtitle p{
+        display: inline-table;
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        text-align: center;
+      }
+      .first-block h1{
+        font-family: "rokkitt", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        padding: 0;
+        margin-bottom: 36px;
+        line-height: 0;
+      }
+      .first-block h3{
+        text-align: center;
+        margin-left: 72px;
+        padding-right: 72px;
+        margin-bottom: 35px;
+        line-height: 24px;
+      }
+      .first-block p{
+        text-align: center;
+        margin-left: 37px;
+        padding-right: 37px;
+        line-height: 24px;
+      }
+      .box{
+        background-color: #ececec;
+        margin-top: 68px;
+      }
+      .box .inner{
+        padding-top: 64px;
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+      .box .inner h2{
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        text-align: center;
+        line-height: 35px;
+        margin-bottom: 40px;
+      }
+      .box .inner .list{
+        margin-left: 55px;
+        width: 450px;
+      }
+      .box .inner .list .listNumber{
+        display: inline-block;
+        width: 35px;
+        color: #00a0df;
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      .box .inner .list .listContent{
+        padding-bottom: 18px;
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 16px;
+        color: #303030;
+        line-height: 20px;
+      }
+      .box .outer{
+        padding: 0;
+        margin: 0;
+        display: block;
+        height: 99px;
+        width: 263px;
+        margin-top: 20px;
+      }
+      .thumbs{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 45px;
+      }
+      .thumbs .thums-title{
+        padding-top: 75px;
+        padding-bottom: 35px;
+        text-align: center;
+      }
+      .thumbs .thumb{
+        width: 178px;
+        height: auto;
+        display: inline-block;
+        margin-left: 25px;
+      }
+      .thumbs .thumb.first{
+        margin-left: 20px;
+      }
+      .thumbs .thumb table td{
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+        color: #0f5199;
+        font-size: 14px;
+        text-align: center;
+      }
+      .learnMore{
+        background-color: #f6f6f6;
+      }
+      .learnMore.title{
+        position: relative;
+        display: block;
+        height: 55px;
+      }
+      .learnMore.title span{
+        position: absolute;
+        top:10px;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+      }
+      .learnMore .column{
+        width: 370px;
+      }
+      .learnMore .separation{
+        border-left: 1px dashed #959595;
+      }
+      .learnMore .guide div{
+        padding-top: 32px;
+        width: 126px;
+        height: auto;
+        margin: auto;
+      }
+      .learnMore .button{
+        padding-top: 34px;
+        padding-bottom: 37px;
+      }
+      .learnMore .button a{
+        width: 252px;
+        position: relative;
+        margin: auto;
+        display: block;
+        height: 35px;
+      }
+      .learnMore .button a span{
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        position: absolute;
+        top: 20%;
+        color: #ffffff;
+        width: 100%;
+        text-align: center;
+      }
+      .icons td{
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+        font-size: 15px;
+        color: #303030;
+        vertical-align: middle;
+      }
+      .icons .paddingTop{
+        padding: 0;
+        height: 40px;
+      }
+      .icons .icon{
+        padding-bottom: 37px;
+        padding-left: 40px;
+      }
+      .icons .image{
+        width: 45px;
+        padding-right: 15px;
+      }
+      .icons .icon img{
+        display: table-cell;
+        vertical-align: middle;
+      }
+      .footer-paddingTop{
+        margin: 0;
+        padding:0;
+        height: 56px;
+      }
+      .footer{
+        padding-top: 34px;
+        padding-left: 33px;
+        padding-right: 115px;
+        padding-bottom: 39px;
+        background-color: #4d4d4d;
+      }
+      .footer img{
+        width: 53px;
+        margin-right: 30px;
+      }
+      .footer p{
+        color: #ffffff;
+        font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+        font-size: 12px;
+      }
+      .footer a{
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      /* -------------------------------------
+          RESPONSIVE AND MOBILE FRIENDLY STYLES
+      ------------------------------------- */
+      @media only screen and (max-width: 640px) {
+        table[class=mainTable] {
+          width: 100%;
+        }
+        table[class=mainTable] h1 {
+          font-size: 78px !important;
+        }
+        table[class=mainTable] .content {
+          width: 100% !important;
+          padding: 0 !important;
+        }
+        table[class=mainTable] .container {
+          padding: 0 !important;
+          width: 100% !important;
+        }
+        table[class=mainTable] .main {
+          border-left-width: 0 !important;
+          border-radius: 0 !important;
+          border-right-width: 0 !important;
+        }
+        table[class=mainTable] .btn table {
+          width: 100% !important;
+        }
+        table[class=mainTable] .btn a {
+          width: 100% !important;
+        }
+        table[class=mainTable] .img-responsive {
+          height: auto !important;
+          max-width: 100% !important;
+          width: auto !important;
+        }
+        .desktop-visible{
+          display: none;
+        }
+        .mobile-visible{
+          display: block;
+        }
+        .trouble-view p{
+          display: block;
+          line-height: 24px;
+          font-size: 24px;
+        }
+        .logo {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        .logo div{
+          width: 100%;
+        }
+        .logo div img{
+          display: table-row;
+          margin: auto;
+          height: 59px;
+          width: 127px;
+          padding-top: 54px;
+          padding-bottom: 54px;
+        }
+        .logo .subtitle{
+          height: 78px;
+          float: none;
+          width: 100%;
+          text-align: center;
+        }
+        .logo .subtitle p{
+          display: block;
+          font-size: 24px;
+          line-height: 28px;
+        }
+        .first-block  h1{
+          margin-top: 75px;
+          padding-bottom: 42px;
+        }
+        .first-block  h3{
+          font-size: 40px;
+          line-height: 42px;
+        }
+        .first-block  p{
+          font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+          font-weight: normal;
+          font-size: 32px;
+          line-height: 44px;
+          margin: 0;
+          padding-left: 49px;
+          padding-right: 49px;
+        }
+
+        .box .inner .first-title-block{
+          font-size: 55px;
+          line-height: 70px;
+          padding-left: 50px;
+          padding-right: 50px;
+          margin-bottom: 0;
+        }
+        .box .inner .second-title-block{
+          font-size: 55px;
+          line-height: 70px;
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-bottom: 30px;
+        }
+        .box .inner .list{
+          margin-left: 10px;
+          width: 100%;
+        }
+        .box .inner .list .listNumber{
+          width: 40px;
+          margin-right: 10px;
+        }
+        .box .inner .list .listNumber,
+        .box .inner .list .listContent{
+          font-size: 32px;
+          line-height: 39px;
+          padding-bottom: 40px;
+        }
+        .box .bottom-text{
+          font-family: "proxima_nova", Helvetica, Arial, sans-serif;
+          font-weight: bold;
+          text-align: center;
+          font-size: 36px;
+          padding-left: 10%;
+          padding-right: 10%;
+          line-height: 43px;
+        }
+        .box .outer{
+          width: 100%;
+        }
+
+        .thumbs .thums-title p{
+          font-size: 32px;
+          padding-left: 80px;
+          padding-right: 80px;
+        }
+        .thumbs .thumb, .thumbs .thumb.first{
+          display: block;
+          margin-bottom: 30px;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+        }
+        .thumbs .thumb .thumb-info{
+          font-size: 28px;
+          padding-left: 20%;
+          padding-right: 20%;
+          padding-top: 10px;
+          padding-bottom: 20px;
+        }
+        .learnMore.title, .learnMore.title img{
+          height:auto;
+          width: 100%;
+        }
+        .learnMore.title span{
+          font-size: 50px;
+          top:50%;
+          line-height: 0;
+        }
+        .learnMore .column{
+          width: 100%;
+          display: inline-block;
+        }
+        .learnMore .separation{
+          display: block;
+          width: 100%;
+          height: 1px;
+          border-left: 0;
+          border-bottom: 1px dashed #959595;
+        }
+        .learnMore .guide div{
+          padding-top: 60px;
+          width: 251px;
+          height: auto;
+          margin: auto;
+        }
+        .learnMore .button{
+          padding-top: 62px;
+          padding-bottom: 20px;
+        }
+        .learnMore .button a{
+          display: block;
+          width: auto;
+          max-width: 502px;
+          height: 72px;
+        }
+        .learnMore .button a span{
+          font-size: 32px;
+        }
+        .icons .icon{
+          padding-left: 0;
+        }
+        .icons table{
+          width: 60%;
+          margin: auto;
+          min-width: 60%;
+        }
+        .icons .info{
+          font-size: 30px;
+          padding-left: 15px;
+          padding-bottom: 0;
+        }
+        .icons .image{
+          padding-bottom: 10px;
+          padding: 0;
+          width: 80px;
+        }
+        .footer{
+          padding-top: 46px;
+          padding-left: 38px;
+          padding-right: 30px;
+        }
+        .footer table td{
+          display: block;
+          padding-bottom: 30px;
+        }
+        .footer table td p{
+          font-size: 24px;
+        }
+        .footer img{
+          width: auto;
+          margin-right: 0;
+        }
+      }
+
+      @media only screen and (max-width: 450px) {
+        .learnMore .button a span{
+          top: 18%;
+          font-size: 26px;
+        }
+        .icons table{
+          width: 70%;
+          margin: auto;
+          min-width: 60%;
+        }
+        .thumbs .thumb .thumb-info{
+          padding-left: 10%;
+          padding-right: 10%;
+        }
+      }
+      /* -------------------------------------
+          PRESERVE THESE STYLES IN THE HEAD
+      ------------------------------------- */
+      @media all {
+        .ExternalClass {
+          width: 100%;
+        }
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+          line-height: 100%;
+        }
+        .apple-link a {
+          color: inherit !important;
+          font-family: inherit !important;
+          font-size: inherit !important;
+          font-weight: inherit !important;
+          line-height: inherit !important;
+          text-decoration: none !important;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <table align="center" border="0" cellpadding="0" cellspacing="0" class="mainTable">
+      <tr>
+        <td class="container">
+          <center>
+            <!-- START CENTERED WHITE CONTAINER -->
+            <span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+            <table align="center" class="main">
+
+              <!-- START MAIN CONTENT AREA -->
+              <tr>
+                <td class="wrapper">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td class="trouble-view">
+                        <p>Trouble viewing this email? </p>
+                        <p><a href="#">See it online</a></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="logo">
+                        <div>
+                          <!--img src="images/adpLogo.png" alt="Adp logo" -->
+                        </div>
+                        <div class="subtitle">
+                          <p>SCHEDULE A CONSULTATION: </p><p>XXX-XXX-XXXX</p>
+                      	</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="first-block">
+                        <h1>Hello!</h1>
+                        <h3>Thank you for downloading the ADP Payroll Guide: 10 Steps to Year-End Payroll, your stress-free guide to wrapping up end-of-year payroll.</h3>
+                        <p>You’re well on your way to finishing payroll for the year. Now is the time to make sure your business is staying compliant and meeting all deadlines—and we’re here to guide you through it. From labor law changes to timely reminders, you’ll find what you need to conquer end-of-year payroll.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="box">
+                          <tr>
+                            <td class="inner">
+                              <h2 class="first-title-block">In 10 easy steps, we’ll walk you through the year-end payroll process, with <span class="desktop-visible">updates, tools, and advice to help you:</span></h2>
+                              <h2 class="mobile-visible second-title-block">updates, tools, and advice to help you:</h2>
+                              <table align="center" class="list" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td class="listNumber">1.</td>
+                                  <td class="listContent">Understand the Fair Labor Standards Act (FLSA) changes, and prepare.</td>
+                                </tr>
+                                <tr>
+                                  <td class="listNumber">2.</td>
+                                  <td class="listContent">Understand the Affordable Care Act (ACA) changes, and prepare.</td>
+                                </tr>
+                                <tr>
+                                  <td class="listNumber">3.</td>
+                                  <td class="listContent">Understand the Federal Unemployment Tax Act (FUTA) changes, and prepare.</td>
+                                </tr>
+                                <tr>
+                                  <td class="listNumber">4.</td>
+                                  <td class="listContent">Review and verify company information.</td>
+                                </tr>
+                                <tr>
+                                  <td class="listNumber">5.</td>
+                                  <td class="listContent">Review and verify employee information.</td>
+                                </tr>
+                                <tr>
+                                  <td class="listNumber">6.</td>
+                                  <td class="listContent">Check your employee totals.</td>
+                                </tr>
+                                <tr>
+                                  <td class="listNumber">7.</td>
+                                  <td class="listContent">Review and verify earnings and deductions.</td>
+                                </tr>
+                                <tr>
+                                  <td class="listNumber">8.</td>
+                                  <td class="listContent">Review and report third-party sick pay.</td>
+                                </tr>
+                                <tr>
+                                  <td class="listNumber">9.</td>
+                                  <td class="listContent">Review and report fringe benefits.</td>
+                                </tr>
+                                <tr>
+                                  <td class="listNumber">10.</td>
+                                  <td class="listContent">Christmas may affect payroll processing—plan ahead.</td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <div class="mobile-visible bottom-text">
+                                Get started on year-end payroll success now!
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="outer">
+                              <!--img src="images/orangeBackground.gif" alt="orange background" -->
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="thumbs">
+                          <tr>
+                            <td class="thums-title">
+                              <p>More small business resources to help you succeed:</p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="thumb first">
+                              <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td>
+                                    <!--img src="images/thumb.gif" alt="thumb" -->
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="thumb-info">
+                                    Maximize Value with the Perfect Payroll Solution
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+
+                            <td class="thumb">
+                              <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td>
+                                    <!--img src="images/thumb.gif" alt="thumb" -->
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="thumb-info">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+
+                            <td class="thumb">
+                              <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td>
+                                    <!--img src="images/thumb.gif" alt="thumb" -->
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="thumb-info">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="learnMore title">
+                        <span>Learn more</span>
+                        <!--img class="desktop-visible" src="images/blueRibbon.jpg" alt="learn more background" -->
+                        <!--img class="mobile-visible" src="images/blueRibbon-big.jpg" alt="learn more background" -->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" class="learnMore">
+                          <tr>
+                            <td class="column">
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" class="learnMore">
+                                <tr>
+                                  <td class="guide">
+                                    <div>
+                                      <!--img src="images/guide.jpg" width="100%" height="auto" alt="guide" -->
+                                    </div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="button">
+                                    <a href="#download guide">
+                                      <span>Download the Guide Again</span>
+                                      <!--img src="images/button-red.gif" width="100%" height="auto" alt="button download" -->
+                                    </a>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <td class="separation"></td>
+                            <td class="column">
+                              <table align="center" border="0" cellpadding="0" cellspacing="0" class="icons">
+                                <tr><td class="paddingTop"></td></tr>
+                                <tr>
+                                  <td class="icon">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td class="image">
+                                          <!--img src="images/arrow-icon.gif" width="100%" height="auto" alt="arrow icon" -->
+                                        </td>
+                                          <td class="info">
+                                            ADP Solutions
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="icon">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td class="image">
+                                          <!--img src="images/phone-icon.gif" width="100%" height="auto" alt="arrow icon" -->
+                                        </td>
+                                          <td class="info">
+                                            xxx-xxx-xxxx.
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="icon">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                      <tr>
+                                        <td class="image">
+                                          <!--img src="images/pencil-icon.gif" width="100%" height="auto" alt="arrow icon" -->
+                                        </td>
+                                          <td class="info">
+                                            Schedule a Consultation
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="footer-paddingTop desktop-visible"></td>
+              </tr>
+              <tr>
+                <td class="footer">
+                  <table align="center" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td>
+                        <!--img src="images/logo-white.gif" width="100%" height="auto" alt="logo ADP0" -->
+                      </td>
+                      <td>
+                        <p>Is this email going to your Junk/Bulk folder?Is this email going to your Junk/Bulk folder?</p> <br>
+                        <p>Add ADP to your address book so future emails will arrive in your inbox. <br><a href="">View our privacy policy.</a></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+
+              <!-- END MAIN CONTENT AREA -->
+              </table>
+          </center>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
