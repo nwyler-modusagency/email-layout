@@ -126,15 +126,13 @@
       }
       .desktop-visible{
         display: block !important;
-        width:auto !important;
-        height:auto !important;
-          visibility:visible !important;
-          padding: 0; !important;
+        visibility:visible !important;
+        padding: 0; !important;
         margin: 0; !important;
       }
       .mobile-visible{
         display: none;
-          mso-hide:all
+        mso-hide:all;
       }
       /* -------------------------------------
           TYPOGRAPHY
@@ -442,11 +440,14 @@
           max-width: 100% !important;
           width: auto !important;
         }
-        .desktop-visible{
-          display: none;
-        }
+
         .mobile-visible{
           display: block;
+        }
+        .desktop-visible{
+          display: none !important;
+          visibility:hidden !important;
+          mso-hide:all !important;
         }
         .trouble-view p{
           display: block;
@@ -708,7 +709,12 @@
                          <table border="0" cellpadding="0" cellspacing="0">
                             <tr>
                                 <td width="50%" valign="middle">
+                                  <div class="desktop-visible">
                                     <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/adpLogo.png" width="56" height="26" alt="Adp logo">
+                                  </div>
+                                  <div class="mobile-visible">
+                                    <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/adpLogo.png" width="127" height="56" alt="Adp logo">
+                                  </div>
                                 </td>
                                 <td>
                                      <table class="subtitle">
@@ -1022,15 +1028,16 @@
                 </td>
               </tr>
               <tr>
-                <td class="footer-paddingTop desktop-visible"></td>
+                <td height="56" class="desktop-visible" style="height:56px;"></td>
               </tr>
               <tr>
                 <td class="footer">
                   <table align="center" border="0" cellpadding="0" cellspacing="0">
                     <tr>
                       <td>
-                        <!--img src="images/logo-white.gif" width="100%" height="auto" alt="logo ADP" -->
+                        <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/logo-white.gif" width="100%" height="auto" alt="logo ADP">
                       </td>
+                        <td width="30"></td>
                       <td>
                         <p>Is this email going to your Junk/Bulk folder?Is this email going to your Junk/Bulk folder?</p> <br>
                         <p>Add ADP to your address book so future emails will arrive in your inbox. <br><a href="">View our privacy policy.</a></p>
