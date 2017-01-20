@@ -250,7 +250,6 @@
       .box{
       	width: 100%;
         background-color: #ececec;
-        margin-top: 68px;
       }
       .box .inner{
       	width: 100%;
@@ -263,7 +262,7 @@
         font-family: "proxima_nova", Helvetica, Arial, sans-serif;
         font-weight: 200;
         text-align: center;
-        line-height: 35px;
+      	padding-bottom: 55px;
       }
       .box .inner .list{
         margin-left: 55px;
@@ -296,9 +295,6 @@
         .box .outer div{
          	width: 99px;
         }
-      .thumbs{
-        padding-bottom: 45px;
-      }
       .thumbs .thums-title{
         padding-top: 75px;
         padding-bottom: 35px;
@@ -337,7 +333,7 @@
         font-family: "proxima_nova", Helvetica, Arial, sans-serif;
       }
       .learnMore .column{
-        width: 370px;
+        width: 315px;
       }
       .learnMore .separation{
         border-left: 1px dashed #959595;
@@ -353,17 +349,14 @@
         padding-bottom: 37px;
       }
       .learnMore .button a{
-        width: 252px;
-        position: relative;
-        margin: auto;
-        display: block;
+        text-decoration: none;
+        width: 200px;
         height: 35px;
       }
-      .learnMore .button a span{
+      .learnMore .button a div{
         font-family: "proxima_nova", Helvetica, Arial, sans-serif;
         font-weight: bold;
         font-size: 16px;
-        position: absolute;
         top: 20%;
         color: #ffffff;
         width: 100%;
@@ -373,23 +366,20 @@
         font-family: "proxima_nova", Helvetica, Arial, sans-serif;
         font-size: 15px;
         color: #303030;
-        vertical-align: middle;
-      }
-      .icons .paddingTop{
-        padding: 0;
-        height: 40px;
+          vertical-align: middle;
       }
       .icons .icon{
-        padding-bottom: 37px;
         padding-left: 40px;
+      	margin-bottom: 30px;
+        display: block;
       }
       .icons .image{
         width: 45px;
         padding-right: 15px;
+      	vertical-align: middle;
       }
-      .icons .icon img{
-        display: table-cell;
-        vertical-align: middle;
+      .icons .icon div img{
+
       }
       .footer-paddingTop{
         margin: 0;
@@ -617,11 +607,13 @@
           font-size: 30px;
           padding-left: 15px;
           padding-bottom: 0;
+        	height: 47px;
         }
         .icons .image{
           padding-bottom: 10px;
           padding: 0;
           width: 80px;
+            height: 47px;
         }
         .footer{
           padding-top: 46px;
@@ -762,16 +754,21 @@
                         <table align="center" border="0" cellpadding="0" cellspacing="0" class="box">
                           <tr>
                             <td class="inner" style="padding-left: 45px; padding-right: 45px;">
-                                 <table align="center" border="0" cellpadding="0" cellspacing="0" style="font-size: 55px; padding-left: 25px; padding-right: 25px;">
-                                	<tr>
-                                		<td>
-                               				<p class="h2">In 10 easy steps, we’ll walk you through the year-end payroll process, with <span class="desktop-visible">updates, tools, and advice to help you:</span></p>
-                              				<p class="h2 mobile-visible second-title-block">updates, tools, and advice to help you:</p>
-                                		</td>
-                                	</tr>
-                                </table>
-
-                              <table align="center" class="list" border="0" cellpadding="0" cellspacing="0">
+                                <table align="center" border="0" cellpadding="0" cellspacing="0">															<tr>
+                                        <td>
+                                            <table align="center" border="0" cellpadding="0" cellspacing="0" style="font-size: 55px; padding-left: 25px; padding-right: 25px; padding-bottom: 0;">
+                                                <tr>
+                                                    <td height="105" style="max-height: 105px;">
+                                                        <p class="h2">In 10 easy steps, we’ll walk you through the year-end payroll process, with <span class="desktop-visible">updates, tools, and advice to help you:</span></p>
+                                                        <p class="h2 mobile-visible second-title-block">updates, tools, and advice to help you:</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                <tr>
+                                  <td>
+                                  	<table align="center" class="list" border="0" cellpadding="0" cellspacing="0" style="padding-top: 0;">
                                 <tr>
                                   <td class="listNumber">1.</td>
                                   <td class="listContent">Understand the Fair Labor Standards Act (FLSA) changes, and prepare.</td>
@@ -813,6 +810,9 @@
                                   <td class="listContent">Christmas may affect payroll processing—plan ahead.</td>
                                 </tr>
                               </table>
+                                  </td>
+                                    </tr>
+                                </table>
                             </td>
                           </tr>
                           <tr>
@@ -911,35 +911,51 @@
                         </table>
                       </td>
                     </tr>
+                      <tr>
+                      	<td height="45"></td>
+                      </tr>
                     <tr>
                       <td class="learnMore title">
-
-
-							<table align="center" border="0" cellpadding="0" cellspacing="0" >
-                    <tr><td>
-                      <img src="images/blueribbon.gif" alt="">
-                    </td></tr>
-                    </td>
+<img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/blueRibbon.gif" alt="title background" width="100%"/>
+                     </td>
                     </tr>
                     <tr>
                       <td>
                         <table align="center" border="0" cellpadding="0" cellspacing="0" class="learnMore">
                           <tr>
                             <td class="column">
-                              <table align="center" border="0" cellpadding="0" cellspacing="0" class="learnMore">
+                              <table align="center" border="0" cellpadding="0" cellspacing="0">
                                 <tr>
-                                  <td class="guide">
-                                    <div>
-                                      <!--img src="images/guide.jpg" width="100%" height="auto" alt="guide" -->
+                                  <td style="padding-left:96px; padding-top:32px;">
+                                    <div class="desktop-visible">
+                                      <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/guide.jpg" width="122" height="auto" alt="guide" style="margin: auto;">
                                     </div>
+                                      <div class="mobile-visible">
+                                      	 <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/guide.jpg" width="100%" height="auto" alt="guide">
+                                      </div>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td class="button">
-                                    <a href="#download guide">
-                                      <span>Download the Guide Again</span>
+
+                                      <table align="center" border="0" cellpadding="0" cellspacing="0" style="display:block; padding-left:35px;">
+                                        <tr>
+                                          <td style="width:18px;">
+                                            <img src="images/button-left.gif" alt="button left" height="36">
+                                          </td>
+                                          <td width="205">
+                                              <a href="#download guide">
+                                                <div style="display:block; text-align:center; color:#ffffff; background-color:#dc1e32; padding-top:7px; height:29px;">
+                                                  Download the Guide Again
+                                                </div>
+                                              <a href="#download guide">
+                                          </td>
+                                            <td>
+                                            <img src="images/button-right.gif" alt="button right" height="36">
+                                          </td>
+                                        </tr>
+                                      </table>
                                       <!--img src="images/button-red.gif" width="100%" height="auto" alt="button download" -->
-                                    </a>
                                   </td>
                                 </tr>
                               </table>
@@ -947,16 +963,23 @@
                             <td class="separation"></td>
                             <td class="column">
                               <table align="center" border="0" cellpadding="0" cellspacing="0" class="icons">
-                                <tr><td class="paddingTop"></td></tr>
+                                <tr><td height="40"></td></tr>
                                 <tr>
-                                  <td class="icon">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                  <td class="icon" height="47px">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 0px; padding-top: 0px;" valign="middle">
                                       <tr>
-                                        <td class="image">
-                                          <!--img src="images/arrow-icon.gif" width="100%" height="auto" alt="arrow icon" -->
+                                       <td class="image">
+                                            <div class="desktop-visible">
+                                          <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/arrow-icon.gif" width="45" height="47" alt="arrow icon">
+                                            </div>
+
+                                            <div class="mobile-visible">
+                                          <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/arrow-icon.gif" width="100%" height="auto" alt="arrow icon">
+                                            </div>
+
                                         </td>
-                                          <td class="info">
-                                            ADP Solutions
+                                          <td class="info" valign="middle" style="vertical-align: middle;">
+                                            <div>ADP Solutions</div>
                                         </td>
                                       </tr>
                                     </table>
@@ -964,28 +987,43 @@
                                 </tr>
                                 <tr>
                                   <td class="icon">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0">
-                                      <tr>
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 0px; padding-top: 0px;">
+                                        <tr>
                                         <td class="image">
-                                          <!--img src="images/phone-icon.gif" width="100%" height="auto" alt="arrow icon" -->
+                                            <div class="desktop-visible">
+                                          <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/phone-icon.gif" width="45" height="47" alt="arrow icon">
+                                            </div>
+
+                                            <div class="mobile-visible">
+                                          <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/phone-icon.gif" width="100%" height="auto" alt="arrow icon">
+                                            </div>
+
                                         </td>
-                                          <td class="info">
-                                            xxx-xxx-xxxx.
+                                        <td class="info" valign="middle" style="vertical-align: middle;">
+                                          xxx-xxx-xxxx.
                                         </td>
+
                                       </tr>
                                     </table>
                                   </td>
                                 </tr>
                                 <tr>
                                   <td class="icon">
-                                    <table align="center" border="0" cellpadding="0" cellspacing="0">
+                                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="padding-bottom: 0px; padding-top: 0px;">
                                       <tr>
                                         <td class="image">
-                                          <!--img src="images/pencil-icon.gif" width="100%" height="auto" alt="arrow icon" -->
+                                            <div class="desktop-visible">
+                                              <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/pencil-icon.gif" width="45" height="47" alt="arrow icon">
+                                            </div>
+
+                                            <div class="mobile-visible">
+                                              <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/pencil-icon.gif" width="100%" height="auto" alt="arrow icon">
+                                            </div>
                                         </td>
-                                          <td class="info">
-                                            Schedule a Consultation
+                                        <td class="info" valign="middle" style="vertical-align: middle;">
+                                         Schedule a Consultation
                                         </td>
+
                                       </tr>
                                     </table>
                                   </td>
