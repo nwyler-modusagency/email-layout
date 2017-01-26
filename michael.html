@@ -1,0 +1,708 @@
+<html style="width:100%;">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>ADP Payroll</title>
+</head>
+
+<body style="width: 100%;  background: #ffffff; margin: 0; padding: 0;">
+
+<style type="text/css">
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Light-webfont.eot?#iefix') format('embedded-opentype'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Light-webfont.woff') format('woff'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Light-webfont.ttf') format('truetype'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Light-webfont.svg#proxima_nova_ltlight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Reg-webfont.eot?#iefix') format('embedded-opentype'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Reg-webfont.woff') format('woff'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Reg-webfont.ttf') format('truetype'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Reg-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova';
+    src: url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Bold-webfont.woff') format('woff'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Bold-webfont.ttf') format('truetype'), url('https://www.adp.com/ADP%20USA%202015/fonts/ProximaNova-Bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'rokkitt';
+    src: url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-regular-webfont-eot.ashx?#iefix') format('embedded-opentype'), url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-regular-webfont-woff.ashx') format('woff'), url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-regular-webfont-ttf.ashx') format('truetype'), url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-regular-webfont.svg#rokkittregular') format('svg');
+    font-weight: 400;
+    font-style: regular;
+}
+
+@font-face {
+    font-family: 'rokkitt';
+    src: url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-bold-webfont-eot.ashx?#iefix') format('embedded-opentype'), url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-bold-webfont-woff.ashx') format('woff'), url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-bold-webfont-ttf.ashx') format('truetype'), url('https://www.adp.com/-/media/USA-2015/SEM/semlps/shared-fonts/rokkitt-bold-webfont.svg#rokkittbold') format('svg');
+    font-weight: 600;
+    font-style: bold;
+}
+
+@media only screen and (min-width: 639px){
+  .center{
+    width: 630px !important;
+  }
+  .thumb{
+    width:210px !important;
+  }
+  .thumb-padding{
+    width: 5px !important;
+  }
+  .column{
+    float: left;
+    width: 300px !important;
+  }
+  .first{
+    border-right: 1px dashed #959595;
+  }
+  .guide-image{
+    width: 150px !important;
+  }
+}
+
+</style>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <table class="center" align="center" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+            	<td height="30"></td>
+            </tr>
+          <tr>
+            <td>
+
+              <table style="text-align: center;" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    Trouble viewing this email?
+                </tr>
+              </table>
+
+              <table style="text-align: center;" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+              		<a href="#" style="color: #0f5199; text-decoration: none; text-align: center;">
+                         See it online
+                  	</a>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+    	<td height="60"></td>
+    </tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <table class="center" align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+
+              <table style="text-align: center;" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+                    <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/adpLogo.gif" width="127px" height="auto" alt="Adp logo" style="-ms-interpolation-mode: bicubic; max-width: 100%; outline: none; text-decoration: none; height: auto; width: 127px; border: 0 none;" align="center">
+                  </td>
+                </tr>
+              </table>
+
+              <table style="text-align: center;" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                  	<td height="10"></td>
+                  </tr>
+                <tr>
+                  <td>
+
+                      <table align="center" width="260" style="text-align: center;" border="0" cellpadding="0" cellspacing="0">
+                      	<tr>
+                      		<td>
+                      			SCHEDULE A CONSULTATION: XXX-XXX-XXXX
+                      		</td>
+                      	</tr>
+                      </table>
+
+                  </td>
+                </tr>
+              </table>
+
+
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <table class="center" align="center" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+
+              <table style="text-align: center;" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td>
+
+                      <table style="text-align: center;" align="center" border="0" cellpadding="0" cellspacing="0">
+                         	<tr>
+                           		<td height="30"></td>
+                          	</tr>
+                            <tr>
+                                <td>
+                                    <span style="font-size: 39px; font-family: 'rokkitt', Helvetica, Arial, sans-serif;">
+                                     Hello!
+                                    </span>
+                                </td>
+                            </tr>
+                          	<tr>
+                          		<td height="20"></td>
+                         	</tr>
+                      </table>
+
+                  </td>
+                </tr>
+                  <tr>
+                  	<td>
+
+                        <table style="text-align: center;" border="0" cellpadding="0" cellspacing="0">
+                        	<tr>
+                              	<td width="20"></td>
+                        		<td>
+                        			Thank you for downloading the ADP Payroll Guide: 10 Steps to Year-End Payroll, your stress-free guide to wrapping up end-of-year payroll.
+                        		</td>
+								<td width="20"></td>
+                        	</tr>
+                            <tr>
+                            	<td height="30"></td>
+                            </tr>
+                        </table>
+
+                  	</td>
+                  </tr>
+                  <tr>
+                  	<td>
+
+                        <table style="text-align: center;" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                  <td width="20"></td>
+                                <td>
+                                   You’re well on your way to finishing payroll for the year. Now is the time to make sure your business is staying compliant and meeting all deadlines—and we’re here to guide you through it. From labor law changes to timely reminders, you’ll find what you need to conquer end-of-year payroll.
+                                </td>
+                                <td width="20"></td>
+                            </tr>
+                            <tr>
+                                <td height="30"></td>
+                            </tr>
+                        </table>
+
+                  	</td>
+                  </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <table class="center" align="center" style="background: #ececec;" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+
+              <table style="text-align: center;" align="center" border="0" cellpadding="0" cellspacing="0">
+              	<tr>
+              		<td height="60"></td>
+              	</tr>
+                <tr>
+                  <td>
+
+                      <table style="text-align: center;" align="center" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="20"></td>
+                            <td>
+                                <span style="color: #000000; font-family: 'proxima_nova', Helvetica, Arial, sans-serif; line-height: 1.4; font-size: 28px; font-weight: 200; text-align: center;">
+                            	In 10 easy steps, we’ll walk you through the year-end payroll process, with updates, tools, and advice to help you:
+                                </span>
+                            </td>
+                            <td width="20"></td>
+                        </tr>
+                      </table>
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <table class="center" align="center" style="background: #ececec;" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td>
+
+              <table style="text-align: center;" align="center" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td height="30"></td>
+                </tr>
+                <tr>
+                  <td>
+
+                      <table style="text-align: center;" align="center" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="20"></td>
+                            <td>
+
+                                <table class="list" align="center" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td class="listNumber" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; display: inline-block; width: 35px; color: #00a0df; font-weight: bold;" valign="top">1.</td>
+                                        <td class="listContent" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; padding-bottom: 18px; font-weight: normal; color: #303030; line-height: 20px;" valign="top">Understand the Fair Labor Standards Act (FLSA) changes, and prepare.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="listNumber" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; display: inline-block; width: 35px; color: #00a0df; font-weight: bold;" valign="top">2.</td>
+                                        <td class="listContent" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; padding-bottom: 18px; font-weight: normal; color: #303030; line-height: 20px;" valign="top">Understand the Affordable Care Act (ACA) changes, and prepare.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="listNumber" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; display: inline-block; width: 35px; color: #00a0df; font-weight: bold;" valign="top">3.</td>
+                                        <td class="listContent" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; padding-bottom: 18px; font-weight: normal; color: #303030; line-height: 20px;" valign="top">Understand the Federal Unemployment Tax Act (FUTA) changes, and prepare.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="listNumber" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; display: inline-block; width: 35px; color: #00a0df; font-weight: bold;" valign="top">4.</td>
+                                        <td class="listContent" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; padding-bottom: 18px; font-weight: normal; color: #303030; line-height: 20px;" valign="top">Review and verify company information.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="listNumber" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; display: inline-block; width: 35px; color: #00a0df; font-weight: bold;" valign="top">5.</td>
+                                        <td class="listContent" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; padding-bottom: 18px; font-weight: normal; color: #303030; line-height: 20px;" valign="top">Review and verify employee information.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="listNumber" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; display: inline-block; width: 35px; color: #00a0df; font-weight: bold;" valign="top">6.</td>
+                                        <td class="listContent" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; padding-bottom: 18px; font-weight: normal; color: #303030; line-height: 20px;" valign="top">Check your employee totals.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="listNumber" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; display: inline-block; width: 35px; color: #00a0df; font-weight: bold;" valign="top">7.</td>
+                                        <td class="listContent" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; padding-bottom: 18px; font-weight: normal; color: #303030; line-height: 20px;" valign="top">Review and verify earnings and deductions.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="listNumber" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; display: inline-block; width: 35px; color: #00a0df; font-weight: bold;" valign="top">8.</td>
+                                        <td class="listContent" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; padding-bottom: 18px; font-weight: normal; color: #303030; line-height: 20px;" valign="top">Review and report third-party sick pay.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="listNumber" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; display: inline-block; width: 35px; color: #00a0df; font-weight: bold;" valign="top">9.</td>
+                                        <td class="listContent" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; padding-bottom: 18px; font-weight: normal; color: #303030; line-height: 20px;" valign="top">Review and report fringe benefits.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="listNumber" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; display: inline-block; width: 35px; color: #00a0df; font-weight: bold;" valign="top">10.</td>
+                                        <td class="listContent" style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 16px; vertical-align: top; padding-bottom: 18px; font-weight: normal; color: #303030; line-height: 20px;" valign="top">Christmas may affect payroll processing—plan ahead.</td>
+                                    </tr>
+                                </table>
+
+                            </td>
+                            <td width="20"></td>
+                        </tr>
+                      </table>
+
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <table class="center" align="center" style="background: #ececec;" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+        		  <td height="20"></td>
+			      </tr>
+          	<tr>
+                <td>
+
+                    <table align="center">
+                        <tr>
+                            <td>
+                                <span style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-weight: bold; text-align: center; font-size: 36px; padding-left: 10%; padding-right: 10%; line-height: 43px; color: #757575; display: block;">
+                                    Get started on year-end payroll success now!
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+          	</tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <table class="center" align="center" style="background: #ececec;" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td height="20"></td>
+            </tr>
+              <tr>
+                <td>
+					<img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/orangeBackground.gif" width="640" height="auto" alt="orange background" style="-ms-interpolation-mode: bicubic; max-width: 100%; outline: none; text-decoration: none; border: 0 none;" class="orangeBackground">
+                </td>
+              </tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <table class="center" align="center" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td height="70"></td>
+            </tr>
+              <tr>
+              	<td width="40"></td>
+                <td style="text-align: center">
+                    <span>More small business resources to help you succeed:</span>
+                </td>
+                <td width="40"></td>
+              </tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <table class="center" align="center" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td height="20"></td>
+            </tr>
+          	<tr>
+              <td>
+                <table class="thumb" align="left" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 14px; vertical-align: top; color: #0f5199; text-align: center;" align="center" valign="top">
+                            <table align="center">
+                                <tr>
+                                    <td class="thumb-padding" width="20"></td>
+                                    <td>
+                                        <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/thumb.gif" alt="thumb" width="356px" style="-ms-interpolation-mode: bicubic; max-width: 100%; outline: none; text-decoration: none; border: 0 none;">
+
+                                    </td>
+                                    <td class="thumb-padding" width="20"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td height="10"></td>
+                    </tr>
+                    <tr>
+                    	<td class="thumb-info" align="center">
+
+                            <table align="center">
+                                <tr>
+                                    <td class="thumb-padding" width="20"></td>
+                                    <td style="text-align: center;">
+                                        <span style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 14px; color: #0f5199; text-align: center;">
+                                    Maximize Value with the Perfect Payroll Solution
+                                		</span>
+                                    </td>
+                                    <td class="thumb-padding" width="20"></td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20"></td>
+                    </tr>
+                </table>
+
+                <table class="thumb" align="left" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 14px; vertical-align: top; color: #0f5199; text-align: center;" align="center" valign="top">
+                            <table align="center">
+                                <tr>
+                                    <td class="thumb-padding" width="20"></td>
+                                    <td>
+                                        <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/thumb.gif" alt="thumb" width="356px" style="-ms-interpolation-mode: bicubic; max-width: 100%; outline: none; text-decoration: none; border: 0 none;">
+
+                                    </td>
+                                    <td class="thumb-padding" width="20"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td height="10"></td>
+                    </tr>
+                    <tr>
+                    	<td class="thumb-info" align="center">
+
+                            <table align="center">
+                                <tr>
+                                    <td class="thumb-padding" width="20"></td>
+                                    <td style="text-align: center;">
+                                        <span style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 14px; color: #0f5199; text-align: center;">
+                                    Maximize Value with the Perfect Payroll Solution
+                                		</span>
+                                    </td>
+                                    <td class="thumb-padding" width="20"></td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20"></td>
+                    </tr>
+                </table>
+
+                <table class="thumb" align="left" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 14px; vertical-align: top; color: #0f5199; text-align: center;" align="center" valign="top">
+                            <table align="center">
+                                <tr>
+                                    <td class="thumb-padding" width="20"></td>
+                                    <td>
+                                        <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/thumb.gif" alt="thumb" width="356px" style="-ms-interpolation-mode: bicubic; max-width: 100%; outline: none; text-decoration: none; border: 0 none;">
+
+                                    </td>
+                                    <td class="thumb-padding" width="20"></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                    	<td height="10"></td>
+                    </tr>
+                    <tr>
+                    	<td class="thumb-info" align="center">
+
+                            <table align="center">
+                                <tr>
+                                    <td class="thumb-padding" width="20"></td>
+                                    <td style="text-align: center;">
+                                        <span style="font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-size: 14px; color: #0f5199; text-align: center;">
+                                    Maximize Value with the Perfect Payroll Solution
+                                		</span>
+                                    </td>
+                                    <td class="thumb-padding" width="20"></td>
+                                </tr>
+                            </table>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td height="20"></td>
+                    </tr>
+                </table>
+
+              </td>
+          	</tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <table class="center" align="center" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td height="45"></td>
+            </tr>
+              <tr>
+              	<td>
+              		<img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/blueRibbon.gif" alt="title background" width="630" height="auto" style="-ms-interpolation-mode: bicubic; max-width: 100%; outline: none; text-decoration: none; border: 0 none;">
+              	</td>
+              </tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <table class="center" align="center" border="0" cellpadding="0" cellspacing="0" style="background: #f6f6f6;">
+
+            <tr>
+            	<td>
+
+                <table align="center">
+                  <tr>
+                    <td>
+                      <img src="images/1px.png" alt="" width="100%" height="auto" style="-ms-interpolation-mode: bicubic; max-width: 100%; outline: none; text-decoration: none; margin: auto; border: 0 none;">
+                      <table align="center" class="column first" style="min-width:300px;">
+                        <tr>
+                          <td height="40"></td>
+                        </tr>
+                        <tr>
+                          <td>
+                               <table align="center">
+                                    <tr>
+                                        <td align="center">
+                                            <img class="guide-image" src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/guide.jpg" width="250" height="auto" alt="guide" style="-ms-interpolation-mode: bicubic; max-width: 100%; outline: none; text-decoration: none; margin: auto; border: 0 none;">
+                                        </td>
+                                    </tr>
+                              </table>
+
+                                <table align="center">
+                                    <tr>
+                                        <td height="30"></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/button-red.gif" alt="download the guide again" height="auto" style="-ms-interpolation-mode: bicubic; max-width: 80%; outline: none; text-decoration: none; border: 0 none; " width="400px">
+                                        </td>
+                                    </tr>
+                                </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td height="40"></td>
+                        </tr>
+                      </table>
+
+                      <table align="center" class="column" style="min-width:300px;">
+                        <tr>
+                          <td height="30"></td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+
+                                    <table align="center">
+                                      <tr>
+                                        <td>
+                                          <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/arrow-icon.gif" width="45" height="47" alt="arrow icon" style="-ms-interpolation-mode: bicubic; max-width: 100%; outline: none; text-decoration: none; border: 0 none;">
+                                        </td>
+                                            <td width="5"></td>
+                                            <td width="160">
+                                              ADP Solutions
+                                            </td>
+                                      </tr>
+                                        <tr>
+                                          <td height="20"></td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/phone-icon.gif" width="45" height="47" alt="arrow icon" style="-ms-interpolation-mode: bicubic; max-width: 100%; outline: none; text-decoration: none; border: 0 none;">
+                                            </td>
+                                            <td width="5"></td>
+                                            <td width="160">
+                                                xxx-xxx-xxxx.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20"></td>
+                                        </tr>
+                                    </table>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/pencil-icon.gif" width="45" height="47" alt="arrow icon" style="-ms-interpolation-mode: bicubic; max-width: 100%; outline: none; text-decoration: none; border: 0 none;">
+                                            </td>
+                                            <td width="5"></td>
+                                            <td width="160">
+                                                Schedule a Consultation
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="20"></td>
+                                        </tr>
+                                    </table>
+
+                          </td>
+                        </tr>
+                            <tr>
+                                <td height="30"></td>
+                            </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+
+
+            	</td>
+            </tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr><td height="60"></td></tr>
+    <tr>
+      <td>
+        <table class="center" align="center" border="0" cellpadding="0" cellspacing="0" style="background: #4d4d4d;">
+            <tr>
+                <td height="20"></td>
+            </tr>
+              <tr>
+                  <td>
+
+                      <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;  width: 100%;">
+                      	<tr>
+                      		<td height="20"></td>
+                      	</tr>
+                        <tr>
+                            <td width="20"></td>
+                            <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">
+                                <img src="https://raw.githubusercontent.com/nwyler-modusagency/email-layout/master/images/logo-white.gif" width="100%" height="auto" alt="logo ADP" style="-ms-interpolation-mode: bicubic; max-width: 100%; outline: none; text-decoration: none; width: 53px; margin-right: 30px; border: 0 none;">
+                            </td>
+                            <td width="30" style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top"></td>
+                            <td style="font-family: sans-serif; font-size: 14px; vertical-align: top;" valign="top">
+                                <p style="font-size: 12px; font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; margin: 0; padding: 0;">Is this email going to your Junk/Bulk folder?Is this email going to your Junk/Bulk folder?</p>
+                                <br>
+                                <p style="font-size: 12px; font-family: 'proxima_nova', Helvetica, Arial, sans-serif; font-weight: normal; color: #ffffff; margin: 0; padding: 0;">Add ADP to your address book so future emails will arrive in your inbox.
+                                    <br><a href="" style="color: #ffffff; text-decoration: none; font-weight: bold;">View our privacy policy.</a></p>
+                            </td>
+                            <td width="20"></td>
+                        </tr>
+                          <tr>
+                          	<td height="30"></td>
+                          </tr>
+                    </table>
+
+              	</td>
+          	</tr>
+        </table>
+      </td>
+    </tr>
+</table>
+
+</body>
